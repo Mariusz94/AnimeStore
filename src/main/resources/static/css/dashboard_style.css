@@ -1,0 +1,115 @@
+body {
+    background-image: url("/img/transformers2.jpg");
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    background-color: rgba(114, 114, 114, 0.5);
+    width: 92%;
+    height: 100vh;
+    position: center;
+    margin: 0 auto;
+
+
+    display: grid;
+    grid-template-columns: 0.01fr 1fr 1fr 1fr 1fr 1fr 0.01fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas:
+            ". box_1 box_1 box_1 box_1 box_1 ."
+            ". . . box_2 box_2  box_2 ."
+            ". box_3 box_3 box_3 box_3 box_3 ."
+            ". box_4 box_4 box_4 box_4 box_4 .";
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.box_1 {
+    grid-area: box_1;
+    height: 12vh;
+    background-color: rgba(114, 114, 114, 0.8);
+    text-align: center;
+
+ }
+
+.box_1 > p {
+    margin: 0;
+    font-size: 40px;
+    color: red;
+}
+
+.box_2 {
+    grid-area: box_2;
+    height: 4vh;
+    background-color: rgba(114, 114, 114, 0.8);
+    text-align: right;
+}
+
+.box_3 {
+    grid-area: box_3;
+    background-color: rgba(114, 114, 114, 0.8);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas:
+            ". box_3_1 box_3_1 box_3_1 ."
+            "box_3_2 box_3_3 box_3_4 box_3_5 box_3_6"
+            ;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.box_3_1 {
+    grid-area: box_3_1;
+    background-color: lightgray;
+    height: 50vh;
+}
+
+.box_gallery {
+    display: block;
+    margin: 0 auto;
+}
+
+.box_3_2 {
+    grid-area: box_3_2;
+    background-color: lightgray;
+    height: 19vh;
+}
+
+.box_3_3 {
+    grid-area: box_3_3;
+    background-color: lightgray;
+}
+
+.box_3_4 {
+    grid-area: box_3_4;
+    background-color: lightgray;
+}
+
+.box_3_5 {
+    grid-area: box_3_5;
+    background-color: lightgray;
+}
+
+.box_3_6 {
+    grid-area: box_3_6;
+    background-color: lightgray;
+}
+
+.box_4 {
+    grid-area: box_4;
+    height: 8vh;
+    background-color: rgba(114, 114, 114, 0.8);
+}
+
+.box_4 > p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
